@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import TopSection from './components/TopSection';
+import Cities from './components/Cities';
+import News from './components/News';
+import Footer from './components/Footer';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    alert('If data is not updating then try after sometime, around 5-15 minutes. since api version i am using is free. and default is  bengaluru. Thank you. ')
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='main'>
+      <TopSection />
+      <Cities />
+      <div className='earthWallpaper'></div>
+      <News />
+      <Footer />
     </div>
   );
 }
