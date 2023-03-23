@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 
 function App() {
   useEffect(() => {
-    alert('If data is not updating then try after sometime, around 5-15 minutes. since api version i am using is free. and default is  bengaluru. Thank you. ')
+    alert('If data is not updating then try after sometime, around 5-15 minutes. since api version i am using is free. and Please allow location premisson. Thank you. ')
   }, [])
 
   return (
